@@ -6,6 +6,9 @@
   "email": "486@486.dev",
   "ps1_hostname": "486.dev",
   "ps1_username": "guest",
+  "social": {
+    "github": "foureightysix"
+  }
   "colors": {
     "light": {
       "background": "#FBF1C9",
