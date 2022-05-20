@@ -16,59 +16,51 @@ export const help = async (args: string[]): Promise<string> => {
   }
   return `Welcome! Here are all the available commands:
 \n${c}\n
-[tab]: trigger completion.
-[ctrl+l]/clear: clear terminal.\n
-Type 'sumfetch' to display summary.
 `;
 };
 
 // Redirection
-export const repo = async (args: string[]): Promise<string> => {
-  window.open(`${config.repo}`);
-  return 'Opening Github repository...';
-};
+// export const repo = async (args: string[]): Promise<string> => {
+//   window.open(`${config.repo}`);
+//   return 'Opening Github repository...';
+// };
 
 // About
 export const about = async (args: string[]): Promise<string> => {
-  return `Hi, I am ${config.name}. 
-Welcome to my website!
-More about me:
-'sumfetch' - short summary.
-'resume' - my latest resume.
-'readme' - my github readme.`;
+  return `Hi, I am ${config.name}.`;
 };
 
-export const resume = async (args: string[]): Promise<string> => {
-  window.open(`${config.resume_url}`);
-  return 'Opening resume...';
-};
+// export const resume = async (args: string[]): Promise<string> => {
+//   window.open(`${config.resume_url}`);
+//   return 'Opening resume...';
+// };
 
 // Donate
-export const donate = async (args: string[]): Promise<string> => {
-  return `thank you for your interest. 
-here are the ways you can support my work:
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
-`;
-};
+// export const donate = async (args: string[]): Promise<string> => {
+//   return `thank you for your interest. 
+// here are the ways you can support my work:
+// - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
+// - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
+// `;
+// };
 
 // Contact
-export const email = async (args: string[]): Promise<string> => {
-  window.open(`mailto:${config.email}`);
-  return `Opening mailto:${config.email}...`;
-};
+// export const email = async (args: string[]): Promise<string> => {
+//   window.open(`mailto:${config.email}`);
+//   return `Opening mailto:${config.email}...`;
+// };
 
-export const github = async (args: string[]): Promise<string> => {
-  window.open(`https://github.com/${config.social.github}/`);
+// export const github = async (args: string[]): Promise<string> => {
+//   window.open(`https://github.com/${config.social.github}/`);
 
-  return 'Opening github...';
-};
+//   return 'Opening github...';
+// };
 
-export const linkedin = async (args: string[]): Promise<string> => {
-  window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`);
+// export const linkedin = async (args: string[]): Promise<string> => {
+//   window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`);
 
-  return 'Opening linkedin...';
-};
+//   return 'Opening linkedin...';
+// };
 
 // Search
 export const google = async (args: string[]): Promise<string> => {
@@ -76,20 +68,20 @@ export const google = async (args: string[]): Promise<string> => {
   return `Searching google for ${args.join(' ')}...`;
 };
 
-export const duckduckgo = async (args: string[]): Promise<string> => {
-  window.open(`https://duckduckgo.com/?q=${args.join(' ')}`);
-  return `Searching duckduckgo for ${args.join(' ')}...`;
-};
+// export const duckduckgo = async (args: string[]): Promise<string> => {
+//   window.open(`https://duckduckgo.com/?q=${args.join(' ')}`);
+//   return `Searching duckduckgo for ${args.join(' ')}...`;
+// };
 
 export const bing = async (args: string[]): Promise<string> => {
   window.open(`https://bing.com/search?q=${args.join(' ')}`);
   return `Wow, really? You are using bing for ${args.join(' ')}?`;
 };
 
-export const reddit = async (args: string[]): Promise<string> => {
-  window.open(`https://www.reddit.com/search/?q=${args.join(' ')}`);
-  return `Searching reddit for ${args.join(' ')}...`;
-};
+// export const reddit = async (args: string[]): Promise<string> => {
+//   window.open(`https://www.reddit.com/search/?q=${args.join(' ')}`);
+//   return `Searching reddit for ${args.join(' ')}...`;
+// };
 
 // Typical linux commands
 export const echo = async (args: string[]): Promise<string> => {
@@ -101,57 +93,51 @@ export const whoami = async (args: string[]): Promise<string> => {
 };
 
 export const ls = async (args: string[]): Promise<string> => {
-  return `a
-bunch
-of
-fake
-directories`;
+  return ``;
 };
 
 export const cd = async (args: string[]): Promise<string> => {
-  return `unfortunately, i cannot afford more directories.
-if you want to help, you can type 'donate'.`;
+  return ``;
 };
 
 export const date = async (args: string[]): Promise<string> => {
   return new Date().toString();
 };
 
-export const vi = async (args: string[]): Promise<string> => {
-  return `woah, you still use 'vi'? just try 'vim'.`;
-};
+// export const vi = async (args: string[]): Promise<string> => {
+//   return `woah, you still use 'vi'? just try 'vim'.`;
+// };
 
-export const vim = async (args: string[]): Promise<string> => {
-  return `'vim' is so outdated. how about 'nvim'?`;
-};
+// export const vim = async (args: string[]): Promise<string> => {
+//   return `'vim' is so outdated. how about 'nvim'?`;
+// };
 
-export const nvim = async (args: string[]): Promise<string> => {
-  return `'nvim'? too fancy. why not 'emacs'?`;
-};
+// export const nvim = async (args: string[]): Promise<string> => {
+//   return `'nvim'? too fancy. why not 'emacs'?`;
+// };
 
-export const emacs = async (args?: string[]): Promise<string> => {
-  return `you know what? just use vscode.`;
-};
+// export const emacs = async (args?: string[]): Promise<string> => {
+//   return `you know what? just use vscode.`;
+// };
 
-export const sudo = async (args?: string[]): Promise<string> => {
-  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
-  return `Permission denied: with little power comes... no responsibility? `;
-};
+// export const sudo = async (args?: string[]): Promise<string> => {
+//   window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
+//   return `Permission denied: with little power comes... no responsibility? `;
+// };
 
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-█████        ███                       ███████████                                   
-░░███        ░░░                       ░█░░░███░░░█                                   
- ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
- ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
- ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
- ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
- ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
-░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
-
+ █████ █████   ████████    ████████         █████                     
+░░███ ░░███   ███░░░░███  ███░░░░███       ░░███                      
+ ░███  ░███ █░███   ░███ ░███   ░░░      ███████   ██████  █████ █████
+ ░███████████░░████████  ░█████████     ███░░███  ███░░███░░███ ░░███ 
+ ░░░░░░░███░█ ███░░░░███ ░███░░░░███   ░███ ░███ ░███████  ░███  ░███ 
+       ░███░ ░███   ░███ ░███   ░███   ░███ ░███ ░███░░░   ░░███ ███  
+       █████ ░░████████  ░░████████  ██░░████████░░██████   ░░█████   
+      ░░░░░   ░░░░░░░░    ░░░░░░░░  ░░  ░░░░░░░░  ░░░░░░     ░░░░░    
+                                                                      
+                                                                                                                                            
 Type 'help' to see the list of available commands.
-Type 'sumfetch' to display summary.
-Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
 `;
 };
