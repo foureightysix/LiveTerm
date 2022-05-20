@@ -1,16 +1,16 @@
 {
   "readmeUrl": "",
-  "title": "486",
+  "title": "486.dev",
   "name": "486",
   "ascii": "486.dev",
-  "email": "486@486.dev",
+  "social": {
+    "github": "",
+    "linkedin": ""
+  },
+  "email": "",
   "ps1_hostname": "486.dev",
   "ps1_username": "guest",
   "repo": "",
-  "social": {
-    "github": "",
-    "linkedin": "",
-  },
   "resume_url": "",
   "donate_urls": {
     "paypal": "",
