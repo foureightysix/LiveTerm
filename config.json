@@ -11,6 +11,10 @@
     "github": "foureightysix"
   },
   "resume_url": "",
+  "donate_urls": {
+    "paypal": "",
+    "patreon": ""
+  },
   "colors": {
     "light": {
       "background": "#FBF1C9",
